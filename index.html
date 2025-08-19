@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo | Ricardo Raphael</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Jokenpô</h1>
+    
+            <div class="container-img-button">
+                <button onclick="play('pedra')" id="rock">
+                    <img src="./img/rock.png" alt="&#x1F44A">
+                </button>
+                <button onclick="play('papel')" id="paper">
+                    <img src="./img/paper.png" alt="&#x1F590">
+                </button>
+                <button onclick="play('tesoura')" id="scissor">
+                    <img src="./img/scissor.png" alt="&#x270C">
+                </button>
+            </div>
+
+            <p class="final-result"></p>
+    
+            <p class="your-scores">Sua Pontuação: <span id="your-scores">0</span></p>
+            <p class="oponent-scores">Pontuação do Oponente: <span id="oponent-scores">0</span></p>
+            
+            <p class="copyright">&copy; 2025 | Ricardo Raphael</p>
+        </div>
+    </main>
+</body>
+<script src="scripts.js"></script>
+</html>

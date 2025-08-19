@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    background-image: url(./img/fight-background.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.container .container-img-button {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0 45px;
+}
+
+.container-img-button button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.container-img-button button:active {
+    transform: scale(0.95);
+}
+
+.container-img-button #rock {
+    background-color: #b300b3;
+    transition: background-color .3s ease-in-out;
+}
+
+.container-img-button #rock:hover {
+    background-color: #e402e4;
+}
+
+.container-img-button #paper {
+    background-color: #00d400;
+    transition: background-color .3s ease-in-out;
+}
+
+.container-img-button #paper:hover {
+    background-color: #26fc26;
+}
+
+.container-img-button #scissor {
+    background-color: #00a8e0;
+    transition: background-color .3s ease-in-out;
+}
+
+.container-img-button #scissor:hover {
+    background-color: #4bd2ff;
+}
+
+.container-img-button button img {
+    width: 60px;
+    object-fit: cover;
+}
+
+.container .final-result {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container .your-scores {
+    margin-bottom: 15px;
+}
+
+#your-scores {
+    color: #00bfff;
+}
+
+#oponent-scores {
+    color: #ff0000;
+}
+
+.container .copyright {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 418px) {
+    .container {
+        width: 90%;
+    }
+
+    .container .container-img-button {
+        gap: 15px;
+    }
+
+    .container .container-img-button button img{
+        width: 100%;
+    }
+}
+
+/* Responsiva orientação paisagem */
+@media screen and (max-width: 962px) and (orientation: landscape) {
+    .container .container-img-button {
+        margin: 20px 0;
+    }
+}
