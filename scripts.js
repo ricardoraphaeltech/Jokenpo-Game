@@ -2,7 +2,7 @@ let yrScore = 0;
 let opntScore = 0;
 
 function play(playerChoice) {
-    const finalResult = document.querySelector(".final-result");
+    const matchResult = document.querySelector(".match-result");
     const yourScore = document.getElementById("your-scores");
     const oponentScore = document.getElementById("oponent-scores");
 
@@ -26,7 +26,7 @@ function play(playerChoice) {
     }
 
     // Atualiza o resultado da disputa
-    finalResult.innerHTML = `Você escolheu ${playerChoice} e 
+    matchResult.innerHTML = `Você escolheu ${playerChoice} e 
     o Oponente escolheu ${oponentChoice}. ${result}`
 
     // Atualiza os valores na tela
