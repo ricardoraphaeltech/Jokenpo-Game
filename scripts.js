@@ -11,23 +11,25 @@ function play(playerChoice) {
 
     let result = "";
 
-    if (playerChoice === oponentChoice) {
-        result = "Empate!";
-    } else if (
+    if(playerChoice === oponentChoice) {
+        result = "Empate!"
+    } else if(
         (playerChoice === "pedra" && oponentChoice === "tesoura") ||
         (playerChoice === "papel" && oponentChoice === "pedra") ||
         (playerChoice === "tesoura" && oponentChoice === "papel")
     ) {
-        result = "Você venceu!";
-        yrScore++;
+        result = "Você venceu!"
+        yrScore++
     } else {
-        result = "Você perdeu!";
-        opntScore++;
+        result = "Você perdeu!"
+        opntScore++
     }
 
-    finalResult.innerHTML = `Você escolheu ${playerChoice} e
-    o Oponente escolheu ${oponentChoice}. ${result}`;
+    // Atualiza o resultado da disputa
+    finalResult.innerHTML = `Você escolheu ${playerChoice} e 
+    o Oponente escolheu ${oponentChoice}. ${result}`
 
+    // Atualiza os valores na tela
     yourScore.innerHTML = yrScore;
     oponentScore.innerHTML = opntScore;
-};
+}
