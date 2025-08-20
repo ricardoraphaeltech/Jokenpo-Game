@@ -23,7 +23,7 @@ function play(playerChoice) {
     } else {
         result = "Você perdeu!"
         opntScore++
-    }
+    };
 
     // Atualiza o resultado da disputa
     matchResult.innerHTML = `Você escolheu ${playerChoice} e 
